@@ -38,8 +38,6 @@ sp_wd = st.number_input("กรุณาเลือกข้อมูล sepal.
 
 if st.button("ทำนายผล"):
     st.write("ทำนาย")
-else:
-    st.write("ไม่ทำนาย")
 
    dt = pd.read_csv("./data/iris.csv") 
    X = dt.drop('variety', axis=1)
@@ -59,3 +57,5 @@ else:
     st.image("./pic/iris2.jpg")
    else:
     st.image("./pic/iris3.jpg")
+else:
+    st.write("ไม่ทำนาย")
