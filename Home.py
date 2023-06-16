@@ -23,9 +23,11 @@ with col3:
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
-st.write(dt.head(10))
+st.markdown(html_8, unsafe_allow_html=True)
+st.markdown("")
 
-dt1 = dt['petal.length'].sum()
-dt2 = dt['petal.width'].sum()
-dt3 = dt['sepal.length'].sum()
-dt4 = dt['sepal.width'].sum()
+pt_len = st.slider("กรุณาเลือกข้อมูล petal.length")
+pt_wd = st.slider("กรุณาเลือกข้อมูล petal.width")
+
+sp_len = st.number_input("กรุณาเลือกข้อมูล sepal.length")
+sp_wd = st.number_input("กรุณาเลือกข้อมูล sepal.width")
