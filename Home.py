@@ -7,21 +7,21 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 st.header('Treedanai')
-st.image("./Pic/Me.png")
+st.image("./pic/Me.png")
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
    st.header("Versicolor")
-   st.image("./Pic/Iris1.jpg")
+   st.image("./pic/Iris1.jpg")
 
 with col2:
    st.header("Verginiga")
-   st.image("./Pic/Iris2.jpg")
+   st.image("./pic/Iris2.jpg")
 
 with col3:
    st.header("Setosa")
-   st.image("./Pic/Iris3.jpg")
+   st.image("./pic/Iris3.jpg")
 
    html_8 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
@@ -78,8 +78,8 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == 'Setosa':
-        st.image("./Pic/Iris1.jpg")
+        st.image("./pic/Iris1.jpg")
    elif out[0] == 'Versicolor':       
-    st.image("./Pic/Iris2.jpg")
+    st.image("./pic/Iris2.jpg")
    else:
-    st.image("./Pic/Iris3.jpg")
+    st.image("./pic/Iris3.jpg")
